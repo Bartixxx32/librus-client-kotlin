@@ -17,7 +17,7 @@ install:
 script:
 - ./gradlew tasks
 
-- ./gradlew clean  jacocoDebugReport -Dscan --stacktrace
+- ./gradlew clean  test
 
 sudo: false
 
