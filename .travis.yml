@@ -7,7 +7,7 @@ env:
   global:
   - ANDROID_API_LEVEL=27
   - ANDROID_BUILD_TOOLS_VERSION=27.0.3
-  - ANDROID_EMU_API_LEVEL=23
+  - ANDROID_EMU_API_LEVEL=27
   - ANDROID_ABI=armeabi-v7a
   - ADB_INSTALL_TIMEOUT=20 # minutes (2 minutes by default)
   - QEMU_AUDIO_DRV=none # Remove audio
@@ -34,4 +34,5 @@ before_script:
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
 script:
-  - travis_wait 60 ./gradlew clean jacocoTestReport lintDevDebug
+  -  ./gradlew clean jacocoTestReport lintDevDebug
+#travis_wait 60
