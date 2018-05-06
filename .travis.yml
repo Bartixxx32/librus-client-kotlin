@@ -35,4 +35,4 @@ before_script:
   - adb shell input keyevent 82 &
 script:
   -  ./gradlew clean jacocoTestReport lintDevDebug
-#travis_wait 60
+##travis_wait 60
