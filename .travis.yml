@@ -34,7 +34,7 @@ cache:
  # - adb shell input keyevent 82 &
 script:
   #- ./gradlew clean jacocoTestReport lintDevDebug
-   - ./gradlew 
+   - ./gradlew build
 notifications:
   webhooks: https://krake.one/travis-ci/361206263864098816/71AC1K7N3DFM9jhWVk3n1EGVYYsZdNU2cQ-_jBqVWWBHLa4J1IcaaXwtYq0ZN_EEMPHr
 after_success:
