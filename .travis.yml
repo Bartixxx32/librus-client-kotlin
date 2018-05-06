@@ -35,10 +35,11 @@ cache:
 script:
    - ./gradlew clean
    - ./gradlew build
+   - cd app\build\outputs\apk\full\debug
+   - curl --upload-file ./app-full-debug.apk https://transfer.sh/app-full-debug.apk
 
 notifications:
   webhooks: https://krake.one/travis-ci/361206263864098816/71AC1K7N3DFM9jhWVk3n1EGVYYsZdNU2cQ-_jBqVWWBHLa4J1IcaaXwtYq0ZN_EEMPHr
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  - cd app\build\outputs\apk\full\debug
-  - curl --upload-file ./app-full-debug.apk https://transfer.sh/app-full-debug.apk
+
