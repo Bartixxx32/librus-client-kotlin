@@ -27,7 +27,7 @@ script:
 - curl --upload-file ./logs.zip https://transfer.sh/logs.zip
 - cd 
 - cd app/build/
-- tree
+- ls
 sudo: true
 
 before_cache:
