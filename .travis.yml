@@ -22,7 +22,8 @@ script:
 - ./gradlew clean test build
 - ls
 - pwd
-- tree
+- cd app/build/reports/tests/
+- ls
 
 sudo: true
 
