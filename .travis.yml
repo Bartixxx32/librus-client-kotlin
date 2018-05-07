@@ -23,11 +23,10 @@ script:
 - ./gradlew clean test build
 - ls
 - pwd
-- cd 
 - cd app/build/Reports
 - ls
 - curl --upload-file ./lint-results.html https://transfer.sh/lint-results.html
-- cd 
+- cd ../../..
 - cd app/build/outputs/apk/dev/debug
 - curl --upload-file ./app-dev-debug.apk https://transfer.sh/app-dev-debug.apk
 sudo: true
