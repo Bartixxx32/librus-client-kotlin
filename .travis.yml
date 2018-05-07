@@ -28,7 +28,6 @@ script:
 - cd 
 - cd app/build/
 - tree
-_
 sudo: true
 
 before_cache:
