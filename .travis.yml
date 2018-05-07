@@ -22,7 +22,7 @@ script:
 - ./gradlew clean test build
 - ls
 - pwd
-- cd app/build/reports/tests/
+- cd app/build/reports/tests/testFullDebugUnitTest
 - ls
 
 sudo: true
